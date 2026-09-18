@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
-    --eccent1-color: #0b132b;
+    --accent1-color: #0b132b;
     --accent2-color: #bee9e8;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -31,6 +31,7 @@ header {
     grid-template-columns: 180px 1fr;
     align-items: center;
     background-color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 15px 20px;
 }
 
@@ -87,13 +88,14 @@ article {
 
 .hero h1 {
     position: absolute;
-    top: 20px;
-    width: 100%;
+    top: 35px;
+    left: 100px;
+    width: calc(100% - 100px);
     padding: 16px;
     text-align: center;
-    opacity: 0.85;
+    opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--accent2-color);
 }
 
 .hero article {
