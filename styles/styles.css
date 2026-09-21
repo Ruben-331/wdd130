@@ -18,7 +18,7 @@ main img {
     float: right;
     width: 150px;
     height: auto;
-    margin-left: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 aside {
@@ -26,12 +26,15 @@ aside {
 }
 
 aside img {
+    display: block;
     width: 200px;
     height: auto;
+    margin: 0 auto 1rem auto;
 }
 
 aside h2 {
     position: absolute;
     top: 47px;
-    left: 150px;
+    left: 50%;
+    transform: translateX(-50%);
 }
