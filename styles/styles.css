@@ -42,13 +42,6 @@ h1 {
     color: #000;
 }
 
-main img {
-    float: right;
-    width: 150px;
-    height: auto;
-    margin: 0 0 1rem 1rem;
-}
-
 .grid {
     display: grid;
     align-items: center;
@@ -59,8 +52,16 @@ main {
     margin: 1rem;
 }
 
+main img {
+    float: right;
+    width: 150px;
+    height: auto;
+    margin: 0 0 1rem 1rem;
+}
+
 aside {
-    width: 20rem;
+    width: 100%;
+    max-width: 280px;
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
