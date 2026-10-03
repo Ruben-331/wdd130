@@ -43,43 +43,51 @@
             </p>
         </section>
 
-        <section class="contact-content">
+        <div class="contact-content">
 
             <div class="map">
                 <iframe
                   src="https://www.google.com/maps?q=Boise%20River%2C%20Boise%2C%20Idaho&output=embed"
-                  width="600"
-                  height="350"
-                  loading="lazy"
-                  title="Map showing our location">
+                  width="600" height="350" loading="lazy" title="Map showing our location">
                 </iframe>
             </div>
 
             <form action="#" method="post">
 
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <label for="name">
+                    Name
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </label>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </label>
 
                 <fieldset>
+
                     <legend>Message Purpose</legend>
 
-                    <label for="general">
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
+                    <div class="purpose-options">
 
-                    <label for="reservation">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general"
+                              required>
+                            General Inquiry
+                        </label>
 
-                    <label for="suggestion">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+
+                    </div>
+
                 </fieldset>
 
                 <label for="message">Message</label>
@@ -96,7 +104,7 @@
 
             </form>
 
-        </section>
+        </div>
 
         <section class="employees-section">
 
