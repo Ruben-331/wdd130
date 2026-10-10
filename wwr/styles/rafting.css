@@ -61,7 +61,6 @@ main {
     padding: 20px;
 }
 
-
 .hero {
     position: relative;
 }
@@ -78,9 +77,14 @@ main {
     left: 0;
     width: 100%;
     padding: 16px;
+    box-sizing: border-box;
     text-align: center;
     color: white;
-    background-color: rgb(11 19 43 / 0.75);
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 650;
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.85);
 }
 
 .hero article {
@@ -363,6 +367,117 @@ footer nav img {
     height: 30px;
 }
 
+/* Home page */
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.home-content img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.newsletter-section,
+.home-cta {
+    margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+}
+
+.newsletter-section form {
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    margin: 5px;
+}
+
+.home-cta a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Trip page */
+
+main > section {
+    margin: 25px 0;
+}
+
+main > section h2 {
+    margin-bottom: 12px;
+}
+
+main > section img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 12px auto;
+}
+
+main > section p {
+    margin: 10px 0;
+}
+
+/* Trip comparison table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: var(--body-font);
+}
+
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
+}
+
+tbody tr:hover {
+    background-color: #e5f4f5;
+}
+
+/* Booking link */
+
+main > section a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+main > section a:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
 /* Mobile layout */
 
 @media (max-width: 700px) {
@@ -376,6 +491,10 @@ footer nav img {
     nav {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .home-content {
+        grid-template-columns: 1fr;
     }
 
     .contact-content {
@@ -398,5 +517,11 @@ footer nav img {
 
     footer nav {
         justify-content: center;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9rem;
     }
 }
